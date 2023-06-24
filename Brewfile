@@ -52,7 +52,7 @@ cask 'whatsapp'
 
 # Menubar
 cask 'keepingyouawake' # Prevents Mac from sleeping
-cast 'istat-menus'
+cask 'istat-menus'
 # missing hovrly
 
 # Quicklook plugins
