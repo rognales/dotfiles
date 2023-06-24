@@ -40,7 +40,7 @@ cask 'sequel-ace' # MySQL client
 
 cask 'fig'
 
-cask 'onedrive'
+# cask 'onedrive'  # This is included with microsoft-office
 cask 'microsoft-office'
 
 cask 'utm' # QEMU GUI
