@@ -20,6 +20,7 @@ brew 'neofetch' # System info
 # Development
 brew 'php@8.1' # I use PHP 8.1 for development
 brew 'composer'
+brew 'pkg-config'
 brew 'imagemagick'
 brew 'nvm' # Node version manager
 
