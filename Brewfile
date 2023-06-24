@@ -14,9 +14,8 @@ brew 'mas' # Mac App Store manager
 brew 'nano' # Prefered editor
 brew 'topgrade' # Upgrade everything
 brew 'tree' # List directory structure
-brew 'startship' # Shell
+brew 'starship' # Shell
 brew 'neofetch' # System info
-brew 'istat-menus' # System info
 
 # Development
 brew 'php@8.1' # I use PHP 8.1 for development
@@ -53,6 +52,7 @@ cask 'whatsapp'
 
 # Menubar
 cask 'keepingyouawake' # Prevents Mac from sleeping
+cast 'istat-menus'
 # missing hovrly
 
 # Quicklook plugins
