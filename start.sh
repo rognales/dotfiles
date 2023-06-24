@@ -91,7 +91,7 @@ fi
 # Install Homebrew
 if ! command -v brew >/dev/null; then
   fancy_echo "Installing Homebrew ..."
-    /bin/bash -c \
+    NONINTERACTIVE=1 /bin/bash -c \
       "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
     append_to_zshrc "eval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\""
