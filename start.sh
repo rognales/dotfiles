@@ -97,6 +97,8 @@ if test ! $(which brew); then
     append_to_zshrc "eval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\""
 
     export PATH="$HOMEBREW_PREFIX/bin:$PATH"
+else
+   fancy_echo "Homebrew already installed."
 fi
 
 if brew list | grep -Fq brew-cask; then
@@ -112,8 +114,14 @@ brew bundle --file ./Brewfile
 
 # Check for Oh My Zsh and install if we don't have it
 if test ! $(which omz); then
+  fancy_echo "Installing Oh My Zsh ..."
   /bin/sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/HEAD/tools/install.sh)"
+else
+  fancy_echo "Oh My Zsh already installed ..."
 fi
+
+# Re-register homebrew
+append_to_zshrc "eval \"\$($HOMEBREW_PREFIX/bin/brew shellenv)\""
 
 # Removes .starship.toml from $HOME (if it exists) and symlinks the .starship.toml file from the .dotfiles
 rm -rf $HOME/.config/starship.toml
