@@ -18,6 +18,7 @@ brew 'starship' # Shell
 brew 'neofetch' # System info
 
 # Development
+brew 'mysql-client'
 brew 'php@8.1' # I use PHP 8.1 for development
 brew 'composer'
 brew 'pkg-config'
